@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Webcam Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 20px;
+        }
+        video {
+            width: 80%;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Webcam Stream with Flask</h1>
+<video id="webcam" autoplay></video>
+<br>
+<button id="stopBtn">Stop Webcam</button>
+
+<!-- Include external JS file -->
+<script src="{{ url_for('static', filename='js/webcam.js') }}"></script>
+
+</body>
+</html>
