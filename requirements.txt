@@ -1,0 +1,11 @@
+gunicorn
+flask 
+fastapi
+uvicorn
+opencv-python
+eventlet
+flask_cors
+aiortc
+flask-socketio
+tensorflow
+pyshine
